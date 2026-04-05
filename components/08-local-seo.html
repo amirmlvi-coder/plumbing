@@ -1,0 +1,285 @@
+<!-- ============================================================
+     COMPONENT: 08-local-seo
+     Local SEO section — suburb coverage, location-rich content
+     ============================================================ -->
+
+<section class="local section section--alt" id="service-area" aria-labelledby="local-heading">
+  <div class="container">
+    <div class="local__inner">
+
+      <!-- Content -->
+      <div class="local__content reveal">
+        <p class="eyebrow">Proudly Local</p>
+        <h2 class="display-2" id="local-heading">Your Local Plumber in Wheelers Hill</h2>
+        <span class="accent-line"></span>
+
+        <p class="body-lg" style="margin-top: 1.5rem; margin-bottom: 1.25rem;">
+          Ash Plumbing Services is based in Wheelers Hill and has been serving Melbourne's south-east suburbs for over a decade. Being local means we can respond quickly, we know the area, and we care about our reputation in the community.
+        </p>
+
+        <p style="font-size: var(--text-base); color: var(--text-body); line-height: 1.75; margin-bottom: 2rem;">
+          Whether you're in a family home in Wheelers Hill, a unit in Mulgrave, or a property in Glen Waverley — we'll be there when you need us. No long wait times, no contractors from across town. A local plumber who lives and works in your area.
+        </p>
+
+        <!-- Suburb chips -->
+        <div class="local__suburbs" role="list" aria-label="Service areas">
+          <span class="local__suburb" role="listitem">Wheelers Hill</span>
+          <span class="local__suburb" role="listitem">Glen Waverley</span>
+          <span class="local__suburb" role="listitem">Mount Waverley</span>
+          <span class="local__suburb" role="listitem">Mulgrave</span>
+          <span class="local__suburb" role="listitem">Rowville</span>
+          <span class="local__suburb" role="listitem">Springvale South</span>
+          <span class="local__suburb" role="listitem">Clarinda</span>
+          <span class="local__suburb" role="listitem">Clayton South</span>
+          <span class="local__suburb" role="listitem">Oakleigh East</span>
+          <span class="local__suburb" role="listitem">Brandon Park</span>
+          <span class="local__suburb local__suburb--more" role="listitem">+ more</span>
+        </div>
+
+        <p style="font-size: var(--text-sm); color: var(--text-muted); margin-top: 1.25rem;">
+          Not on the list? Call us — we likely cover your area too.
+        </p>
+      </div>
+
+      <!-- Map placeholder / visual -->
+      <div class="local__map reveal reveal-d2" aria-label="Service area map">
+        <div class="local__map-inner">
+          <div class="local__map-pin" aria-hidden="true">
+            <div class="local__map-pin-dot">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 1a6 6 0 00-6 6c0 5 6 12 6 12s6-7 6-12a6 6 0 00-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="local__map-pin-ring"></div>
+          </div>
+          <div class="local__map-label">Wheelers Hill, VIC</div>
+          <div class="local__map-radius-text">Serving a 20km radius</div>
+          <div class="local__map-stats">
+            <div class="local__map-stat">
+              <strong>10+</strong>
+              <span>Years local</span>
+            </div>
+            <div class="local__map-stat-div" aria-hidden="true"></div>
+            <div class="local__map-stat">
+              <strong>10+</strong>
+              <span>Suburbs served</span>
+            </div>
+            <div class="local__map-stat-div" aria-hidden="true"></div>
+            <div class="local__map-stat">
+              <strong>&lt;1hr</strong>
+              <span>Avg. response</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ----- LOCAL SEO ----- */
+.local__inner {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: var(--sp-16);
+  align-items: center;
+}
+
+/* Suburb chips */
+.local__suburbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-2);
+}
+
+.local__suburb {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-dark);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  padding: 6px 14px;
+  transition: background-color var(--t-fast), border-color var(--t-fast), color var(--t-fast);
+}
+
+.local__suburb:hover {
+  background-color: var(--copper-pale);
+  border-color: rgba(196,118,44,.30);
+  color: var(--copper-dark);
+}
+
+.local__suburb--more {
+  background-color: var(--copper-pale);
+  border-color: rgba(196,118,44,.20);
+  color: var(--copper-dark);
+  font-weight: 600;
+}
+
+/* Map visual */
+.local__map {
+  aspect-ratio: 1 / 1;
+  max-width: 420px;
+  width: 100%;
+}
+
+.local__map-inner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, var(--navy-mid) 0%, var(--navy) 100%);
+  border-radius: var(--r-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-4);
+  position: relative;
+  overflow: hidden;
+  padding: var(--sp-10);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Grid overlay on map */
+.local__map-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+/* Glow */
+.local__map-inner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, rgba(196,118,44,.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.local__map-pin {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.local__map-pin-dot {
+  width: 44px;
+  height: 44px;
+  background-color: var(--copper);
+  border-radius: var(--r-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(196,118,44,.5);
+}
+
+.local__map-pin-ring {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(196,118,44,.35);
+  border-radius: var(--r-full);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.5); opacity: 0; }
+}
+
+.local__map-label {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  z-index: 1;
+}
+
+.local__map-radius-text {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,.5);
+  font-weight: 500;
+  z-index: 1;
+}
+
+.local__map-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5) var(--sp-6);
+  z-index: 1;
+  margin-top: var(--sp-4);
+}
+
+.local__map-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.local__map-stat strong {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--white);
+  font-weight: 400;
+  line-height: 1;
+}
+.local__map-stat span {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,.45);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.local__map-stat-div {
+  width: 1px;
+  height: 32px;
+  background: rgba(255,255,255,.12);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .local__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-12);
+  }
+  .local__map {
+    max-width: 500px;
+    margin-inline: auto;
+    aspect-ratio: 4 / 2;
+  }
+  .local__map-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--sp-8);
+  }
+}
+
+@media (max-width: 480px) {
+  .local__map { aspect-ratio: auto; }
+  .local__map-stats { flex-wrap: wrap; justify-content: center; }
+  .local__map-stat-div { display: none; }
+}
+</style>

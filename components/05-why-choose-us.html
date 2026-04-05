@@ -1,0 +1,181 @@
+<!-- ============================================================
+     COMPONENT: 05-why-choose-us
+     Differentiation section — split layout, 5 key points
+     ============================================================ -->
+
+<section class="why section section--alt" id="why-choose-us" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="why__inner">
+
+      <!-- Left: Heading block -->
+      <div class="why__header reveal">
+        <p class="eyebrow">Why Ash Plumbing</p>
+        <h2 class="display-2" id="why-heading">The Plumber You Can Actually Count On</h2>
+        <span class="accent-line"></span>
+        <p class="body-lg" style="margin-top: 1.5rem;">Plenty of tradies say they're reliable. We back it up — with honest communication, fair pricing, and work that lasts.</p>
+        <div class="why__cta-row">
+          <a href="tel:0412345678" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M14.5 11.5l-2.9-2.9a1 1 0 00-1.4 0l-1 1c-.2.2-.5.3-.8.1-.9-.6-2.1-1.8-2.7-2.7-.2-.3-.1-.6.1-.8l1-1a1 1 0 000-1.4L3.9 1.5a1 1 0 00-1.4 0L1.3 2.7C.5 3.5.4 5 1.5 6.4c1.5 2 3.5 4 5.6 5.6 1.4 1.1 2.9 1 3.7.2l1.2-1.2a1 1 0 000-1.5z" fill="currentColor"/>
+            </svg>
+            Get in Touch
+          </a>
+          <a href="#reviews" class="btn btn--outline">See Our Reviews</a>
+        </div>
+      </div>
+
+      <!-- Right: Points list -->
+      <ul class="why__list" role="list">
+
+        <li class="why__point reveal reveal-d1" role="listitem">
+          <div class="why__point-check" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l4 4 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="why__point-body">
+            <h3 class="why__point-title">Shows up on time, every time</h3>
+            <p class="why__point-text">We respect your schedule. If there's ever a delay, you'll hear from us before it happens — not after.</p>
+          </div>
+        </li>
+
+        <li class="why__point reveal reveal-d2" role="listitem">
+          <div class="why__point-check" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l4 4 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="why__point-body">
+            <h3 class="why__point-title">Explains everything before starting</h3>
+            <p class="why__point-text">No guessing games. You'll know exactly what the issue is, what it costs to fix, and why — before any work begins.</p>
+          </div>
+        </li>
+
+        <li class="why__point reveal reveal-d3" role="listitem">
+          <div class="why__point-check" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l4 4 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="why__point-body">
+            <h3 class="why__point-title">Fair and competitive pricing</h3>
+            <p class="why__point-text">Our quotes are honest and market-fair. We don't inflate prices because someone is in a tough spot — and our customers notice.</p>
+          </div>
+        </li>
+
+        <li class="why__point reveal reveal-d4" role="listitem">
+          <div class="why__point-check" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l4 4 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="why__point-body">
+            <h3 class="why__point-title">Quality workmanship that lasts</h3>
+            <p class="why__point-text">Every job is done properly the first time. We use quality parts and take pride in the finish — no shortcuts, no comebacks.</p>
+          </div>
+        </li>
+
+        <li class="why__point reveal reveal-d5" role="listitem">
+          <div class="why__point-check" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l4 4 7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="why__point-body">
+            <h3 class="why__point-title">Leaves your home clean and tidy</h3>
+            <p class="why__point-text">We treat your home with respect. When we're done, we pack up and clean up — you won't know we were there, except the problem is fixed.</p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ----- WHY CHOOSE US ----- */
+.why__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-20);
+  align-items: start;
+}
+
+.why__cta-row {
+  display: flex;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin-top: var(--sp-8);
+}
+
+/* Points list */
+.why__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.why__point {
+  display: flex;
+  gap: var(--sp-5);
+  padding-block: var(--sp-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.why__point:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.why__point:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.why__point-check {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background-color: var(--copper);
+  border-radius: var(--r-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  margin-top: 2px;
+}
+
+.why__point-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.why__point-title {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--sp-1);
+  line-height: 1.4;
+}
+
+.why__point-text {
+  font-size: var(--text-sm);
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .why__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-12);
+  }
+}
+
+@media (max-width: 480px) {
+  .why__cta-row { flex-direction: column; }
+  .why__cta-row .btn { justify-content: center; }
+}
+</style>

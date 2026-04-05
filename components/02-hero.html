@@ -1,0 +1,336 @@
+<!-- ============================================================
+     COMPONENT: 02-hero
+     Full-viewport hero — dark navy, copper accents, trust strip
+     ============================================================ -->
+
+<section class="hero section--dark" id="home" aria-label="Hero">
+  <!-- Background effects -->
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__bg-glow"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+
+        <!-- Location badge -->
+        <div class="badge badge--light anim-fade-up" role="text">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M6 1a3.5 3.5 0 00-3.5 3.5C2.5 7.5 6 11 6 11s3.5-3.5 3.5-6.5A3.5 3.5 0 006 1zm0 4.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z" fill="currentColor"/>
+          </svg>
+          Wheelers Hill &amp; Surrounds
+        </div>
+
+        <!-- Headline -->
+        <h1 class="display-1 hero__headline anim-fade-up anim-d1">
+          Fast, Reliable Plumbing<br>
+          <em class="hero__headline-em">When It Matters Most</em>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="body-lg hero__sub anim-fade-up anim-d2">
+          Ash Plumbing Services brings honest work and fair pricing to homeowners across Melbourne's south-east. We show up quickly, fix it properly, and leave your home as we found it.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__ctas anim-fade-up anim-d3">
+          <a href="tel:0412345678" class="btn btn--primary btn-lg" aria-label="Call Ash Plumbing on 0412 345 678">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M16.5 12.75l-3.3-3.3a1.125 1.125 0 00-1.575 0l-1.125 1.125c-.225.225-.562.337-.9.112-1.012-.675-2.362-2.025-3.037-3.037-.225-.338-.113-.675.112-.9L7.8 5.625a1.125 1.125 0 000-1.575L4.5 0.75A1.125 1.125 0 002.925.75L1.35 2.325C.45 3.225.337 4.95 1.575 6.525c1.688 2.25 3.938 4.5 6.3 6.3 1.575 1.238 3.3 1.125 4.2.225l1.575-1.575a1.125 1.125 0 000-1.725z" fill="currentColor"/>
+            </svg>
+            Call Now: 0412 345 678
+          </a>
+          <a href="#contact" class="btn btn--ghost-light btn-lg">
+            Request a Quote
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust strip -->
+        <div class="hero__trust anim-fade-up anim-d4" role="list" aria-label="Trust indicators">
+          <div class="hero__trust-item" role="listitem">
+            <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1l1.8 3.6L14 5.3l-3 2.9.7 4.1L8 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z" fill="currentColor"/>
+            </svg>
+            <span>Licensed &amp; Insured</span>
+          </div>
+          <div class="hero__trust-sep" aria-hidden="true"></div>
+          <div class="hero__trust-item" role="listitem">
+            <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M8 4.5V8l2.5 1.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Same-Day Service</span>
+          </div>
+          <div class="hero__trust-sep" aria-hidden="true"></div>
+          <div class="hero__trust-item" role="listitem">
+            <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1l1.8 3.6L14 5.3l-3 2.9.7 4.1L8 10.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7z" fill="currentColor"/>
+            </svg>
+            <span>5-Star Rated</span>
+          </div>
+          <div class="hero__trust-sep" aria-hidden="true"></div>
+          <div class="hero__trust-item" role="listitem">
+            <svg class="hero__trust-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1.5C4.41 1.5 1.5 4.41 1.5 8S4.41 14.5 8 14.5 14.5 11.59 14.5 8 11.59 1.5 8 1.5zm0 2a4.5 4.5 0 11.001 9.001A4.5 4.5 0 018 3.5z" fill="currentColor"/>
+              <path d="M8 5v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+            </svg>
+            <span>Local Business</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero visual accent -->
+      <div class="hero__visual anim-fade-up anim-d3" aria-hidden="true">
+        <div class="hero__card">
+          <div class="hero__card-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 2a10 10 0 11.001 20.001A10 10 0 0116 6z" fill="currentColor" opacity=".25"/>
+              <path d="M10 22.5c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 16.5V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12.5 12.5L16 9l3.5 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="hero__card-label">Available Today</div>
+            <div class="hero__card-value">Same-Day Booking</div>
+          </div>
+        </div>
+        <div class="hero__card hero__card--sm">
+          <div class="hero__rating">
+            <span class="hero__stars">★★★★★</span>
+            <strong>5.0</strong>
+          </div>
+          <div class="hero__card-label">Google Reviews</div>
+        </div>
+        <div class="hero__card hero__card--sm">
+          <div class="hero__card-value hero__card-value--lg">10+</div>
+          <div class="hero__card-label">Years Experience</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom curve -->
+  <div class="hero__curve" aria-hidden="true">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,64 C360,0 1080,0 1440,64 L1440,64 L0,64 Z" fill="var(--bg)"/>
+    </svg>
+  </div>
+</section>
+
+<style>
+/* ----- HERO ----- */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: calc(72px + var(--section-py));
+  padding-bottom: calc(var(--section-py) + 48px);
+  overflow: hidden;
+}
+
+/* Background */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero__bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.hero__bg-glow {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, rgba(196,118,44,.12) 0%, transparent 65%);
+  border-radius: 50%;
+}
+
+/* Inner layout */
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--sp-16);
+  align-items: center;
+  width: 100%;
+}
+
+/* Content */
+.hero__content {
+  max-width: 680px;
+}
+
+.hero__headline {
+  color: var(--white);
+  margin-top: var(--sp-5);
+  margin-bottom: var(--sp-6);
+}
+
+.hero__headline-em {
+  font-style: italic;
+  color: var(--copper-hover);
+}
+
+.hero__sub {
+  color: var(--text-light);
+  max-width: 540px;
+  margin-bottom: var(--sp-10);
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-12);
+}
+
+/* Trust strip */
+.hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-4);
+  padding-top: var(--sp-8);
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+
+.hero__trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: rgba(255,255,255,.72);
+}
+
+.hero__trust-icon {
+  color: var(--copper);
+  flex-shrink: 0;
+}
+
+.hero__trust-sep {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(255,255,255,.15);
+}
+
+/* Visual accent cards */
+.hero__visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.hero__card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5) var(--sp-6);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  backdrop-filter: blur(8px);
+}
+
+.hero__card--sm {
+  flex: 1;
+}
+
+.hero__card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196,118,44,.15);
+  border-radius: var(--r);
+  color: var(--copper-hover);
+  flex-shrink: 0;
+}
+
+.hero__card-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 2px;
+}
+
+.hero__card-value {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.hero__card-value--lg {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--copper-hover);
+  line-height: 1;
+}
+
+.hero__rating {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+}
+.hero__stars { color: var(--copper); font-size: var(--text-base); letter-spacing: -1px; }
+.hero__rating strong { font-family: var(--font-display); font-size: var(--text-2xl); color: var(--white); font-weight: 400; }
+
+/* Bottom curve */
+.hero__curve {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 64px;
+}
+.hero__curve svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .hero__visual {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hero__card { flex: 1; min-width: 200px; }
+  .hero__content { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .hero { min-height: auto; padding-top: calc(64px + var(--section-py)); }
+  .hero__visual { display: none; }
+  .hero__trust-sep { display: none; }
+  .hero__trust { gap: var(--sp-3) var(--sp-5); }
+}
+
+@media (max-width: 480px) {
+  .hero__ctas { flex-direction: column; }
+  .hero__ctas .btn { width: 100%; justify-content: center; }
+}
+</style>

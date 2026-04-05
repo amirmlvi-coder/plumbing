@@ -1,0 +1,171 @@
+<!-- ============================================================
+     COMPONENT: 03-trust-bar
+     Credibility strip — 5 key proof points with icons
+     ============================================================ -->
+
+<section class="trust-bar" aria-label="Why choose us at a glance">
+  <div class="container">
+    <ul class="trust-bar__list" role="list">
+
+      <li class="trust-bar__item reveal">
+        <div class="trust-bar__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="11" cy="11" r="9.5" stroke="currentColor" stroke-width="1.75"/>
+            <path d="M11 5.5V11l3 2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="trust-bar__text">
+          <strong>Same-Day Service</strong>
+          <span>Available across the south-east</span>
+        </div>
+      </li>
+
+      <li class="trust-bar__divider" aria-hidden="true"></li>
+
+      <li class="trust-bar__item reveal reveal-d1">
+        <div class="trust-bar__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 2l1.94 5.96H19l-4.97 3.61 1.9 5.83L11 14.12l-4.93 3.28 1.9-5.83L3 7.96h6.06z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="trust-bar__text">
+          <strong>Upfront Pricing</strong>
+          <span>No hidden fees, ever</span>
+        </div>
+      </li>
+
+      <li class="trust-bar__divider" aria-hidden="true"></li>
+
+      <li class="trust-bar__item reveal reveal-d2">
+        <div class="trust-bar__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M5 11.5l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="11" cy="11" r="9.5" stroke="currentColor" stroke-width="1.75"/>
+          </svg>
+        </div>
+        <div class="trust-bar__text">
+          <strong>Tidy Workmanship</strong>
+          <span>We clean up after every job</span>
+        </div>
+      </li>
+
+      <li class="trust-bar__divider" aria-hidden="true"></li>
+
+      <li class="trust-bar__item reveal reveal-d3">
+        <div class="trust-bar__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M3.5 11a7.5 7.5 0 1015 0 7.5 7.5 0 00-15 0z" stroke="currentColor" stroke-width="1.75"/>
+            <path d="M11 7v4l-3 1.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 4l1-1.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+            <path d="M4 4L3 2.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="trust-bar__text">
+          <strong>Fast Response</strong>
+          <span>We pick up, we show up</span>
+        </div>
+      </li>
+
+      <li class="trust-bar__divider" aria-hidden="true"></li>
+
+      <li class="trust-bar__item reveal reveal-d4">
+        <div class="trust-bar__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 2L4 6v6c0 4.42 2.97 8.55 7 9.5 4.03-.95 7-5.08 7-9.5V6l-7-4z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+            <path d="M8 11l2 2 4-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="trust-bar__text">
+          <strong>Emergency Ready</strong>
+          <span>Urgent jobs taken seriously</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<style>
+/* ----- TRUST BAR ----- */
+.trust-bar {
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-block: var(--sp-8);
+}
+
+.trust-bar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.trust-bar__item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex: 1;
+  min-width: 0;
+}
+
+.trust-bar__icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--copper-pale);
+  border-radius: var(--r);
+  color: var(--copper);
+}
+
+.trust-bar__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.trust-bar__text strong {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+.trust-bar__text span {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.trust-bar__divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--border);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .trust-bar__list { gap: var(--sp-3); }
+  .trust-bar__text span { display: none; }
+}
+
+@media (max-width: 768px) {
+  .trust-bar { padding-block: var(--sp-6); }
+  .trust-bar__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-4);
+  }
+  .trust-bar__divider { display: none; }
+  .trust-bar__text span { display: block; }
+}
+
+@media (max-width: 400px) {
+  .trust-bar__list { grid-template-columns: 1fr; }
+}
+</style>

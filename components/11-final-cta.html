@@ -1,0 +1,256 @@
+<!-- ============================================================
+     COMPONENT: 11-final-cta
+     Closing CTA — dark navy, strong call to action
+     ============================================================ -->
+
+<section class="final-cta section--dark" id="contact" aria-labelledby="cta-heading">
+  <div class="final-cta__bg" aria-hidden="true">
+    <div class="final-cta__bg-grid"></div>
+    <div class="final-cta__bg-glow"></div>
+  </div>
+
+  <div class="container">
+    <div class="final-cta__inner reveal">
+
+      <div class="final-cta__content">
+        <p class="eyebrow">Get Started Today</p>
+        <h2 class="display-2 final-cta__title" id="cta-heading">
+          Ready to Get Your Plumbing Sorted?
+        </h2>
+        <p class="body-lg final-cta__sub">
+          Call now for a fast response, or send us a message for a free, no-obligation quote. We're based locally and ready to help.
+        </p>
+
+        <!-- Reassurance pills -->
+        <div class="final-cta__pills" role="list" aria-label="Reassurances">
+          <div class="final-cta__pill" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7l3 3 7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            No-obligation quote
+          </div>
+          <div class="final-cta__pill" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7l3 3 7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Fast response
+          </div>
+          <div class="final-cta__pill" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7l3 3 7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Upfront pricing
+          </div>
+          <div class="final-cta__pill" role="listitem">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7l3 3 7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Licensed &amp; insured
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA block -->
+      <div class="final-cta__actions">
+
+        <!-- Call card -->
+        <div class="final-cta__card final-cta__card--primary">
+          <div class="final-cta__card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="final-cta__card-label">Call Us Now</div>
+          <a href="tel:0412345678" class="final-cta__phone">0412 345 678</a>
+          <p class="final-cta__card-note">Speak directly with Ash</p>
+          <a href="tel:0412345678" class="btn btn--primary" style="margin-top: var(--sp-3); width: 100%; justify-content: center;">
+            Call Now
+          </a>
+        </div>
+
+        <!-- Quote card -->
+        <div class="final-cta__card">
+          <div class="final-cta__card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="final-cta__card-label">Get a Quote</div>
+          <p class="final-cta__card-text">Send a message or a photo of your issue for a fast estimate. We'll get back to you promptly.</p>
+          <a href="sms:0412345678" class="btn btn--ghost-light" style="margin-top: var(--sp-3); width: 100%; justify-content: center;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M13 2H3a1 1 0 00-1 1v7a1 1 0 001 1h2l2 3 2-3h4a1 1 0 001-1V3a1 1 0 00-1-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            Send a Message
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ----- FINAL CTA ----- */
+.final-cta {
+  position: relative;
+  padding-block: var(--section-py);
+  overflow: hidden;
+}
+
+.final-cta__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.final-cta__bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.final-cta__bg-glow {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse, rgba(196,118,44,.10) 0%, transparent 65%);
+}
+
+.final-cta__inner {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: var(--sp-16);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta__title {
+  color: var(--white);
+  margin-top: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+
+.final-cta__sub {
+  color: var(--text-light);
+  max-width: 480px;
+  margin-bottom: var(--sp-8);
+}
+
+/* Pills */
+.final-cta__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.final-cta__pill {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: rgba(255,255,255,.65);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  padding: 6px 14px;
+  border-radius: var(--r-full);
+}
+.final-cta__pill svg { color: var(--copper-hover); }
+
+/* Cards */
+.final-cta__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-5);
+  align-items: start;
+}
+
+.final-cta__card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: var(--r-lg);
+  padding: var(--sp-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  transition: background-color var(--t), border-color var(--t);
+}
+
+.final-cta__card:hover {
+  background: rgba(255,255,255,.09);
+  border-color: rgba(196,118,44,.30);
+}
+
+.final-cta__card--primary {
+  border-color: rgba(196,118,44,.35);
+  background: rgba(196,118,44,.08);
+}
+.final-cta__card--primary:hover {
+  background: rgba(196,118,44,.12);
+}
+
+.final-cta__card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(196,118,44,.18);
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--copper-hover);
+  margin-bottom: var(--sp-1);
+}
+
+.final-cta__card-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--copper-hover);
+}
+
+.final-cta__phone {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  transition: color var(--t-fast);
+}
+.final-cta__phone:hover { color: var(--copper-hover); }
+
+.final-cta__card-note {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,.50);
+  font-weight: 500;
+}
+
+.final-cta__card-text {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: rgba(255,255,255,.65);
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .final-cta__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-12);
+  }
+}
+
+@media (max-width: 600px) {
+  .final-cta__actions { grid-template-columns: 1fr; }
+  .final-cta__phone { font-size: var(--text-2xl); }
+}
+</style>

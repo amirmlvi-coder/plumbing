@@ -1,0 +1,242 @@
+<!-- ============================================================
+     COMPONENT: 01-navbar
+     Sticky top navigation with logo, links, phone CTA, mobile menu
+     ============================================================ -->
+
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="navbar__logo" aria-label="Ash Plumbing Services — home">
+        <div class="navbar__logo-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 21c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/>
+            <path d="M14 14V5" stroke="currentColor" stroke-width="2.25" stroke-linecap="round"/>
+            <path d="M10 9l4-4 4 4" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="14" cy="21.5" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">Ash Plumbing</span>
+          <span class="navbar__logo-sub">Services Pty Ltd</span>
+        </div>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="navbar__links" role="list">
+        <li><a href="#services" class="navbar__link">Services</a></li>
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#reviews" class="navbar__link">Reviews</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="tel:0412345678" class="btn btn--primary btn-sm navbar__cta" aria-label="Call Ash Plumbing: 0412 345 678">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M14.5 11.5l-2.9-2.9a1 1 0 00-1.4 0l-1 1c-.2.2-.5.3-.8.1-.9-.6-2.1-1.8-2.7-2.7-.2-.3-.1-.6.1-.8l1-1a1 1 0 000-1.4L3.9 1.5a1 1 0 00-1.4 0L1.3 2.7C.5 3.5.4 5 1.5 6.4c1.5 2 3.5 4 5.6 5.6 1.4 1.1 2.9 1 3.7.2l1.2-1.2a1 1 0 000-1.5z" fill="currentColor"/>
+        </svg>
+        0412 345 678
+      </a>
+
+      <!-- Burger -->
+      <button class="navbar__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="navbar__mobile" id="navMobile" aria-hidden="true">
+    <div class="container">
+      <ul class="navbar__mobile-links" role="list">
+        <li><a href="#services" class="navbar__mobile-link">Services</a></li>
+        <li><a href="#about" class="navbar__mobile-link">About</a></li>
+        <li><a href="#reviews" class="navbar__mobile-link">Reviews</a></li>
+        <li><a href="#contact" class="navbar__mobile-link">Contact</a></li>
+      </ul>
+      <a href="tel:0412345678" class="btn btn--primary" style="width:100%; margin-top: 1.25rem; justify-content: center;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M14.5 11.5l-2.9-2.9a1 1 0 00-1.4 0l-1 1c-.2.2-.5.3-.8.1-.9-.6-2.1-1.8-2.7-2.7-.2-.3-.1-.6.1-.8l1-1a1 1 0 000-1.4L3.9 1.5a1 1 0 00-1.4 0L1.3 2.7C.5 3.5.4 5 1.5 6.4c1.5 2 3.5 4 5.6 5.6 1.4 1.1 2.9 1 3.7.2l1.2-1.2a1 1 0 000-1.5z" fill="currentColor"/>
+        </svg>
+        Call Now: 0412 345 678
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+/* ----- NAVBAR ----- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color var(--t), box-shadow var(--t), border-bottom-color var(--t);
+  border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(12, 25, 41, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0,0,0,.25);
+  border-bottom-color: rgba(255,255,255,.06);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  gap: var(--sp-8);
+}
+
+/* Logo */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--white);
+  flex-shrink: 0;
+  transition: opacity var(--t-fast);
+}
+.navbar__logo:hover { opacity: 0.85; }
+
+.navbar__logo-icon {
+  color: var(--copper);
+  flex-shrink: 0;
+}
+
+.navbar__logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.navbar__logo-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.1;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.navbar__logo-sub {
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/* Nav links */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-6);
+  margin-left: auto;
+}
+
+.navbar__link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: rgba(255,255,255,.75);
+  letter-spacing: 0.01em;
+  transition: color var(--t-fast);
+  position: relative;
+}
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--copper);
+  border-radius: var(--r-full);
+  transition: width var(--t);
+}
+.navbar__link:hover { color: var(--white); }
+.navbar__link:hover::after { width: 100%; }
+
+/* CTA */
+.navbar__cta {
+  flex-shrink: 0;
+  font-size: var(--text-sm);
+  padding: 10px 20px;
+}
+
+/* Burger */
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  padding: 4px;
+}
+.navbar__burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--white);
+  border-radius: var(--r-full);
+  transition: transform var(--t), opacity var(--t);
+}
+.navbar__burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar__burger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.navbar__burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu */
+.navbar__mobile {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s var(--ease);
+  background-color: var(--navy);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.navbar__mobile.is-open {
+  max-height: 400px;
+}
+.navbar__mobile > .container {
+  padding-block: var(--sp-6);
+}
+
+.navbar__mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.navbar__mobile-link {
+  display: block;
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: rgba(255,255,255,.80);
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  transition: color var(--t-fast);
+}
+.navbar__mobile-link:hover { color: var(--white); }
+
+/* Responsive */
+@media (max-width: 860px) {
+  .navbar__links { display: none; }
+  .navbar__cta { display: none; }
+  .navbar__burger { display: flex; }
+  .navbar__mobile { display: block; }
+}
+
+@media (max-width: 480px) {
+  .navbar__logo-sub { display: none; }
+  .navbar__inner { height: 64px; }
+}
+</style>
